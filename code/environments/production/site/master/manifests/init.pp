@@ -77,7 +77,7 @@ class master {
   }
 
   # unsure why, but this folder does not get created and without it activemq
-  # fails to work properly 
+  # fails to work properly
   file { '/usr/share/activemq/activemq-data':
     ensure  => 'directory',
     group   => 'activemq',
