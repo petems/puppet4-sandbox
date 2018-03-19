@@ -5,7 +5,7 @@ if [ ! -f /etc/provisioned ] ; then
   /bin/rm -f /etc/yum.repos.d/puppetlabs*
 
   # install Puppet 4.x release repo
-  /bin/yum -y install https://yum.puppetlabs.com/puppetlabs-release-pc1-el-7.noarch.rpm
+  /bin/yum -y install https://yum.puppet.com/puppet5/puppet5-release-el-7.noarch.rpm
   if [ $? -ne 0 ] ; then
     echo "Something went wrong installing the repository RPM"
     exit 1
